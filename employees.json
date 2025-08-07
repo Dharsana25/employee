@@ -1,0 +1,74 @@
+[
+     {
+          "id": 1,
+          "name": "Meera Thomas",
+          "des": "Software Engineer",
+          "dept": "IT",
+          "email": "merra@gmail.com"
+          
+         
+     },
+     {
+          "id": 2,
+          "name": "ravi patel",
+          "des": "Project Manager",
+          "dept": "Project Management",
+          "email": "ravi@gmail.com"
+     },
+     {
+          "id": 3,
+          "name": "Rahul Sharm",
+          "des": "UI/UX Designer",
+          "dept": "Designing",
+          "email": "rahul@gmail.com"
+     },
+     {
+          "id": 4,
+          "name": "Sneha Reddy",
+          "des": "QA Tester",
+          "dept": "Quality Assurance",
+          "email": "snega@gmail.com"
+     },
+     {
+          "id": 5,
+          "name": " Thomas",
+          "des": "Software Develop",
+          "dept": "IT",
+          "email": "merra@gmail.com"
+     },
+     {
+          "id": 6,
+          "name": "Priya Nair",
+          "des": "HR Executive",
+          "dept": "Human Resource",
+          "email": "priya@gmail.com"
+     },
+     {
+          "id": 7,
+          "name": "Karan Mehta",
+          "des": "Data Analyst",
+          "dept": "IT",
+          "email": "karan@gmail.com"
+     },
+     {
+          "id": 8,
+          "name": " Khan",
+          "des": "Customer Support Lead",
+          "dept": "Support",
+          "email": "khan@gmail.com"
+     },
+     {
+          "id": 9,
+          "name": "Aisha Khan",
+          "des": "Backend Developer",
+          "dept": "IT",
+          "email": "aisha@gmail.com"
+     },
+     {
+          "id": 10,
+          "name": "Divya Sinha",
+          "des": "DevOps Engineer",
+          "dept": "IT",
+          "email": "divya@gmail.com"
+     }
+]

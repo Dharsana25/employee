@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body> 
+     <header>
+        <h1>Employee Directory Manager</h1>
+    </header>
+    <div id="input" >
+        <form id="empform">
+            <div class="formgrp">
+            <input id="empid" placeholder="id" />
+            <span id="idError" class="error-msg"></span>
+            
+            <input id="empname" placeholder="Name" />
+            <span id="nameError" class="error-msg"></span>
+            </div>
+            <div class="formgrp">
+            <select id="empdes">
+                <option value=""selected>--Select Designation--</option>
+                <option value="IT">Software Engineer</option>
+                <option value="Design">Project Manager</option>
+                <option value="Human Resource">UI/UX Designer</option>
+                <option value="Support">Software Develop</option>
+                <option value="Support">QA Tester</option>
+                <option value="Support">HR Executive</option>
+                <option value="Support">Data Analyst</option>
+                <option value="Support">Customer Support Lead</option>
+                <option value="Support">Backend Developer</option>
+                <option value="Support">Devops Engineer</option>
+            </select>
+            <span id="desError" class="error-msg"></span>
+             </div>
+             <div class="formgrp">
+            <select id="empdept">
+                <option value=""selected>--Select Department--</option>
+                <option value="Software Engineer">IT</option>
+                <option value="Project Manager">Human Resource</option>
+                <option value="UI/UX Designer">Designing</option>
+                <option value="QA Tester">Quality Assurance</option>
+                <option value="Software Develop">Project Management</option>
+                <option value="customer support lead">Support</option>
+            </select>
+            <span id="deptError" class="error-msg"></span>
+        </div>
+        <div class="formgrp">
+            <input id="empemail" placeholder="Email" />
+            <span id="emailError" class="error-msg"></span>
+            </div>
+            <div id="buttons">
+            <button type="submit" id="submitbtn">Submit</button>
+             <button type="button" id="cancelbtn">Cancel</button>
+             </div>
+        </form>
+    </div>
+    <button id="btn">Add Employee</button>
+    <input type="text" id="search" placeholder="search">
+     <div id="messageOverlay" class="overlay"></div>
+<div id="messageBox" class="message-box">
+  <p>Please select at least one employee to delete.</p>
+  <button onclick="closeMessage()">OK</button>
+</div>
+    <button id="deleteSelected">Delete Selected</button>
+    <p id="message"></p>
+
+    <div id="overlay"></div>
+    <div id="confirmBox">
+        <p id="confirmMessage">Are you sure you want to delete this employee?</p>
+        <button id="yes">Yes, Delete</button>
+        <button id="cancel">Cancel</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="selectAll" /></th>
+                <th>Id</span></th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="databody"></tbody>
+    </table>
+<div id="sidePanel" class="side-panel">
+    <button onclick="closeSidePanel()">Close</button>
+    <p><strong>ID:</strong> <span id="viewId"></span></p>
+    <p><strong>Name:</strong> <span id="viewName"></span></p>
+    <p><strong>Designation:</strong> <span id="viewDes"></span></p>
+    <p><strong>Department:</strong> <span id="viewDept"></span></p>
+    <p><strong>Email:</strong> <span id="viewEmail"></span></p>
+  </div>
+
+    <script src="JS.js"></script>
+</body>
+
+</html>  

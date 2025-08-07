@@ -1,0 +1,269 @@
+ h1 {
+   text-align: center;
+   padding: 15px;
+   opacity: 0.6;
+   background-color: whitesmoke;
+   box-shadow: 3px 5px 4px 6px gainsboro;
+   margin-top: 0px
+ }
+
+ #input {
+   display: none;
+   padding: 15px;
+   margin-bottom: 20px;
+   width: 250px;
+   padding: 20px;
+   border: 1px solid gainsboro;
+   border-radius: 5px;
+   box-shadow: 2px 2px 2px gainsboro;
+ }
+
+ #input input,
+ #input select {
+   padding: 8px;
+   margin: 5px;
+   border-radius: 4px;
+   border: 1px solid;
+ }
+
+ #input button {
+   padding: 8px 12px;
+   border: none;
+   margin: 5px;
+   border-radius: 4px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+
+ #emp-dept {
+   width: 180px;
+
+ }
+
+ .error-msg {
+   color: rgba(255, 0, 0, 0.745);
+   font-size: 15px;
+   display: block;
+   margin-left: 10px;
+ }
+
+ #submit-btn {
+   background-color: green;
+   color: white;
+   width: 90px;
+ }
+
+ #cancel-btn {
+   background-color: rgba(255, 0, 0, 0.745);
+   color: white;
+   width: 90px;
+ }
+
+ #btn {
+   padding: 10px;
+   background-color: royalblue;
+   border: none;
+   color: white;
+   border-radius: 4px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-top: 0;
+ }
+
+ #search {
+   padding: 10px;
+   width: 200px;
+   border: 1px solid;
+   border-radius: 4px;
+   margin-left: 10px;
+ }
+
+ table {
+   margin-top: 5px;
+   width: 100%;
+   border-collapse: collapse;
+   background-color: white;
+ }
+
+ th,
+ td {
+   border: 1px solid gray;
+   padding: 8px;
+   text-align: center;
+ }
+
+ th {
+   background-color: gainsboro;
+   color: black;
+   padding: 10px;
+ }
+
+ td button {
+   padding: 5px 10px;
+   margin-right: 5px;
+   border: none;
+   border-radius: 4px;
+   color: white;
+ }
+
+ #delete-Selected {
+   background-color: rgba(255, 0, 0, 0.745);
+   color: white;
+   padding: 9px;
+   border: none;
+   border-radius: 4px;
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+
+ .sidepanel {
+   display: none;
+   position: fixed;
+   right: -300px;
+   top: 0;
+   width: 200px;
+   height: 100%;
+   background-color: gainsboro;
+   padding: 20px;
+   box-shadow: -2px 0 5px;
+ }
+
+ .sidepanel.show {
+   display: block;
+   right: 0;
+ }
+
+ .sidepanel button {
+   background-color: rgba(255, 0, 0, 0.745);
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 3px;
+   margin-bottom: 10px;
+ }
+
+ #click {
+   padding: 10px;
+   background-color: rgba(255, 0, 0, 0.745);
+   color: white;
+   border: none;
+   border-radius: 3px;
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+
+ #overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: none;
+   z-index: 999;
+ }
+
+ #confirm-Box {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: gainsboro;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px black;
+   display: none;
+   z-index: 1000;
+   text-align: center;
+ }
+
+ #yes {
+   background-color: rgba(255, 0, 0, 0.745);
+   color: white;
+   border-radius: 4px;
+   padding: 5px;
+   border: none;
+   margin-left: 10px;
+   margin-top: 20px;
+ }
+
+ #cancel {
+   background-color: gray;
+   color: white;
+   border-radius: 4px;
+   padding: 5px;
+   border: none;
+   margin-left: 20px;
+   margin-top: 20px;
+ }
+
+ #message-Overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: none;
+ }
+
+ .messagebox {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: gainsboro;
+   padding: 20px 30px;
+   border-radius: 6px;
+   box-shadow: 1px 2px 3px;
+   text-align: center;
+   display: none;
+ }
+
+ .messagebox button {
+   background-color: royalblue;
+   color: white;
+   border: none;
+   padding: 10px;
+   border-radius: 4px;
+ }
+
+ button.view {
+   background-color: green;
+   width: 50px;
+   padding: 8px;
+   margin-top: 10px;
+ }
+
+ button.edit {
+   background-color: royalblue;
+   width: 50px;
+   padding: 8px;
+   margin-top: 10px;
+ }
+
+ button.delete {
+   background-color: rgba(255, 0, 0, 0.745);
+   width: 50px;
+   padding: 8px;
+   margin-top: 10px;
+ }
+
+ .name-link {
+   color: blue;
+   cursor: pointer;
+ }
+
+ .name-link:hover {
+   color: cornflowerblue;
+   cursor: pointer;
+ }
+
+ td {
+   color: rgba(0, 0, 0, 0.689);
+   font-weight: normal;
+ }
+
+ td.email,
+ td.dept,
+ td.des {
+   color: rgba(0, 0, 0, 0.689);
+ }

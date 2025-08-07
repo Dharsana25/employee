@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Employee Directory Manager</h1>
+    </header>
+    <div id="input">
+        <form id="emp-form">
+            <div class="formgrp">
+                <input id="emp-id" placeholder="id" />
+                <span id="id_Error" class="error-msg"></span>
+
+                <input id="emp-name" placeholder="Name" />
+                <span id="name_Error" class="error-msg"></span>
+            </div>
+            <div class="formgrp">
+                <select id="emp-des" required>
+                    <option value="">--Select Designation--</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="QA Tester">QA Tester</option>
+                    <option value="HR Executive">HR Executive</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Customer Support Lead">Customer Support Lead</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Technical Lead">Technical Lead</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Talent Acquisition Lead">Talent Acquisition Lead</option>
+                    <option value="Cloud Architect">Cloud Architect</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Network Engineer">Network Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Legal Advisor">Legal Advisor</option>
+                    <option value="Finance Executive">Finance Executive</option>
+                </select>
+
+                <span id="des_Error" class="error-msg"></span>
+            </div>
+            <div class="formgrp">
+                <select id="emp-dept" required>
+                    <option value="" selected>--Select Department--</option>
+                    <option value="IT">IT</option>
+                    <option value="Human Resource">Human Resource</option>
+                    <option value="Designing">Designing</option>
+                    <option value="Quality Assurance">Quality Assurance</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="Support">Support</option>
+                    <option value="IT">IT</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Operations">Operations</option>
+                    <option value="HR">HR</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Design">Design</option>
+                    <option value="Product">Product</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Finance">Finance</option>
+                </select>
+
+                <span id="dept_Error" class="error-msg"></span>
+            </div>
+            <div class="form-grp">
+                <input id="emp-email" placeholder="Email" />
+                <span id="email_Error" class="error-msg"></span>
+            </div>
+            <div id="buttons">
+                <button type="submit" id="submit-btn">Submit</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <button id="btn">Add Employee</button>
+    <input type="text" id="search" placeholder="search">
+    <div id="message-Overlay" class="overlay"></div>
+    <div id="message-Box" class="messagebox">
+        <p>Please select at least one employee to delete.</p>
+        <button onclick="closeMessage()">OK</button>
+    </div>
+    <button id="delete-Selected">Delete Selected</button>
+    <p id="message"></p>
+
+    <div id="overlay"></div>
+    <div id="confirm-Box">
+        <p id="confirm-Message">Are you sure you want to delete this employee?</p>
+        <button id="yes">Yes, Delete</button>
+        <button id="cancel">Cancel</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="select-All" /></th>
+                <th>Id</span></th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="data-body"></tbody>
+    </table>
+    <div id="side-Panel" class="sidepanel">
+        <button onclick="closeSidePanel()">Close</button>
+        <p><strong>ID:</strong> <span id="view-Id"></span></p>
+        <p><strong>Name:</strong> <span id="view-Name"></span></p>
+        <p><strong>Designation:</strong> <span id="view-Des"></span></p>
+        <p><strong>Department:</strong> <span id="view-Dept"></span></p>
+        <p><strong>Email:</strong> <span id="view-Email"></span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

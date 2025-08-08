@@ -10,6 +10,7 @@ fetch("employees.json")
   });
 function renderList(data) {
   const databody = document.getElementById("data-body");
+  databody.innerHTML = "";   
   for (let i = 0; i < data.length; i++) {
     const emp = data[i];
 
@@ -299,4 +300,5 @@ function clearForm() {
   document.getElementById("dept_Error").textContent = "";
   document.getElementById("email_Error").textContent = "";
 }
+
 
